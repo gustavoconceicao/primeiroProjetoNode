@@ -1,0 +1,28 @@
+{
+  "name": "projetotestes",
+  "version": "1.0.0",
+  "description": "Projeto de testes utilizando Node.js",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gustavoconceicao/primeiroProjetoNode.git"
+  },
+  "keywords": [
+    "NodeJs",
+    "Express",
+    "BackEnd"
+  ],
+  "author": "Gustavo Conceicao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gustavoconceicao/primeiroProjetoNode/issues"
+  },
+  "homepage": "https://github.com/gustavoconceicao/primeiroProjetoNode#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6"
+  }
+}
