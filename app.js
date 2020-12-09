@@ -1,15 +1,21 @@
- const express = require("express");
- const app = express();
+const express = require("express");
+const app = express();
+const db = require("./Models/conexao")
+const noticia = require("./Models/noticias")
 
  app.get("/", function(req, res){
-     res.send("Pagina iniciaaaaal")
+     res.sendFile(__dirname + "/views/index.html")
  })
 
- app.get("/nome/:nome/:idade", function(req,res){
-     res.send(req.params)
+ app.get("/cadastro/:tituloNoticia/:couteudoNoticia", function(req,res){
+     noticia.create({
+        tituloNoticia: "teste 2",
+        couteudoNoticia: "bbbbbbbbbbbbbbbbbbbbb"
+     }).then (function(){
+         res.send("Noticia Cadastrada");
+     })  
  })
 
- 
  app.listen(8081, function(){
      console.log("servidor rodando")
  });
