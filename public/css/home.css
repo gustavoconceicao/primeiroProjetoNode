@@ -1,0 +1,113 @@
+body{
+    font-family: 'News Cycle', sans-serif;
+}
+
+header{    
+    background-color: gainsboro;
+    border-bottom: solid 1px;
+    margin-bottom: 30px;
+
+}
+
+#cabeçalho{
+    background-color: gainsboro;
+    width: 980px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+    padding: 15px;
+}
+
+#cabeçalho h1{
+     margin-left: 0%;
+}
+
+
+a{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+}
+
+a:hover{
+    transform: scale(1.1);
+    color: white;
+}
+
+h1{
+    font-size: 30px;
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+    width: 940px;
+    text-align: center;
+}
+
+.label{
+    display: block;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#tituloNoticia{
+    width: 300px;
+    height: 20px;
+    padding: 5px;
+}
+
+button{
+    padding: 15px;
+    font-size: 22px;
+    color: white;
+    background: coral;
+    display: block;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 200px));
+    grid-gap: 10px;    
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  
+  .grid-container > div {
+    border: solid 1px black;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    transition: border-width 0.1s linear;
+  }
+
+  .grid-container > div:hover{
+      border-width: 5px;
+  }
+
+#listaNoticia > h2 {
+     font-size: 50px;
+     text-transform: uppercase;
+     font-weight: bold;
+     margin-bottom: 30px;
+  }
+
+  #listaNoticia > p{
+      font-size: 16px;
+      padding: 5px;
+      text-align: justify;
+      font-style: italic;
+  }
