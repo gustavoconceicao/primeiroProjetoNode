@@ -1,4 +1,6 @@
 const db = require("./conexao")
+//Criando model da noticia
+
 
 const noticia = db.sequelize.define("noticias", {
     tituloNoticia:{

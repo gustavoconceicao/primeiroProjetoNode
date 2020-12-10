@@ -7,6 +7,7 @@
      dialect: "mysql"
  })
 
+ //Testando Conexão
  try {
     sequelize.authenticate();
     console.log('Connection has been established successfully.');

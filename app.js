@@ -13,7 +13,9 @@ const noticia = require("./Models/noticias")
         couteudoNoticia: "bbbbbbbbbbbbbbbbbbbbb"
      }).then (function(){
          res.send("Noticia Cadastrada");
-     })  
+     }).catch(function(error){
+        res.send(error)
+     }) 
  })
 
  app.listen(8081, function(){
