@@ -1,0 +1,10 @@
+  <div class = "grid-container">
+{{#each noticias}}
+    <div id="listaNoticia">
+      <h2>{{dataValues.tituloNoticia}} </h2>
+      <a href="/admin/removerPost/{{dataValues.id}}"><span class="material-icons">close</span></a> 
+      <p>{{dataValues.couteudoNoticia}} </p>
+    </div>  
+{{/each}}
+ </div>
+ 

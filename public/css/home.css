@@ -5,7 +5,7 @@ body{
 header{    
     background-color: gainsboro;
     border-bottom: solid 1px;
-    margin-bottom: 30px;
+  
 
 }
 
@@ -23,8 +23,12 @@ header{
      margin-left: 0%;
 }
 
+.titulo{
+    text-decoration: none;
+    color:black
+}
 
-a{
+a:not(.titulo){
     font-size: 20px;
     text-transform: uppercase;
     text-decoration: none;
@@ -32,13 +36,14 @@ a{
     margin-left: 10px;
 }
 
-a:hover{
+a:hover:not(.titulo){
     transform: scale(1.1);
     color: white;
 }
 
 h1{
     font-size: 30px;
+    cursor: pointer;
 }
 
 #formulario{
@@ -46,6 +51,7 @@ h1{
     justify-content: center;
     width: 940px;
     text-align: center;
+    margin: 0 auto;
 }
 
 .label{
@@ -78,7 +84,7 @@ button:hover{
 
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 200px));
+    grid-template-columns: repeat(auto-fit, minmax(430px, 200px));
     grid-gap: 10px;    
     padding: 10px;
     max-width: 980px;
@@ -99,6 +105,7 @@ button:hover{
   }
 
 #listaNoticia > h2 {
+     display: inline-block;
      font-size: 50px;
      text-transform: uppercase;
      font-weight: bold;
@@ -111,3 +118,33 @@ button:hover{
       text-align: justify;
       font-style: italic;
   }
+
+  .material-icons{
+      font-size: 15px;
+      color:red;      
+      float: right;
+      margin: 0 10px;
+      cursor: pointer;
+  }
+
+.sucesso{
+    background-color: rgb(6, 180, 6);
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    border-bottom: 1px solid black;    
+    margin-bottom: 20px;
+
+}
+
+.erro{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 100%;
+    border-bottom: 1px solid black;    
+    margin-bottom: 20px;
+
+}

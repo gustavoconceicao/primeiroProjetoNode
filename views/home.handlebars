@@ -1,8 +1,17 @@
+{{#if sucesso_msg}}
+    <div class="sucesso">{{sucesso_msg}}</div>
+{{/if}}
+
+{{#if erro_msg}}
+    <div class="erro">{{sucesso_msg}}</div>
+{{/if}}
+
+
   <div class = "grid-container">
 {{#each noticias}}
     <div id="listaNoticia">
-      <h2>{{dataValues.tituloNoticia}} </h2>
-       <p>{{dataValues.couteudoNoticia}} </p>
+      <h2>{{dataValues.tituloNoticia}} </h2>     
+      <p>{{dataValues.couteudoNoticia}} </p>
     </div>  
 {{/each}}
  </div>
